@@ -1,4 +1,4 @@
-const form = document.getElementById('registrar');
+const form = document.getElementById('allergyRegistrar');
 const input = form.querySelector('input');
 
 const mainDiv = document.querySelector('.main');
@@ -69,7 +69,7 @@ form.addEventListener('submit', (e) => {
 
 ul.addEventListener('change', (e) => {
   console.log(e.target.checked);
-  const checkbox = event.target;
+  const checkbox = e.target;
   const checked = checkbox.checked;
   const listItem = checkbox.parentNode.parentNode;
   
